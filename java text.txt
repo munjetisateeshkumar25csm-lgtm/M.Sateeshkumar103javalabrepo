@@ -1,0 +1,27 @@
+class a
+ {
+      int a,intb;
+	  
+      a(int c,int d)
+ {
+        c=a;
+        d=b;
+ }
+      m1()
+ {
+      return c;
+ }
+      m2()
+ {   
+     return d;
+ }
+ }
+ class text
+ {  
+   public static void main(string[] args){
+   
+            a n=new a(20,30);
+			system.out.println(m1.n);
+			system.out.println(m2.n);
+			}
+ }
