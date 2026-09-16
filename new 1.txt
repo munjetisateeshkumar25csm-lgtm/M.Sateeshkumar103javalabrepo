@@ -1,0 +1,38 @@
+abstract class Vehicle {
+    int speed;
+
+    abstract void fuelType();
+
+    void showSpeed() {
+        System.out.println("Speed: " + speed + " kmph");
+    }
+}
+
+class Car extends Vehicle {
+    void fuelType() {
+        System.out.println("Fuel type: Petrol/Diesel");
+    }
+}
+
+class ElectricCar extends Vehicle {
+    void fuelType() {
+        System.out.println("Fuel type: Electrical Battery");
+    }
+}
+
+public class Pavan23 {
+    public static void main(String[] args) {
+
+        Car car = new Car();
+        car.speed = 120;
+        car.showSpeed();
+        car.fuelType();
+
+        System.out.println();
+
+        ElectricCar ecar = new ElectricCar();
+        ecar.speed = 100;
+        ecar.showSpeed();
+        ecar.fuelType();
+    }
+}
